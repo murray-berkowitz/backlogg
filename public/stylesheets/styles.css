@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+body {
+  background-color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0; }
+
+img {
+  max-width: 100%;
+  max-height: 100%; }
+
+a {
+  text-decoration: none; }
+
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto; }
+
+.featuredGames .title {
+  color: white;
+  font-size: 24px; }
+.featuredGames .gameSlide {
+  padding: 0 12px;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  transition: all .075s linear; }
+  .featuredGames .gameSlide img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover; }
+  .featuredGames .gameSlide a:hover h4 {
+    color: red;
+    transition: all .075s linear; }
+  .featuredGames .gameSlide h4 {
+    color: white;
+    font-size: 18px;
+    transition: all .075s linear; }
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.singleGame {
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh; }
+  .singleGame .gameInfo {
+    position: relative;
+    z-index: 1;
+    padding: 128px 0; }
+    .singleGame .gameInfo .title {
+      margin: 0;
+      color: white;
+      font-size: 32px; }
+    .singleGame .gameInfo .row {
+      display: flex;
+      height: 70vh;
+      background-color: rgba(0, 0, 0, 0.5); }
+      .singleGame .gameInfo .row .info, .singleGame .gameInfo .row .featuredImage {
+        padding: 14px; }
+      .singleGame .gameInfo .row .info {
+        flex: 2 0 0; }
+        .singleGame .gameInfo .row .info .description {
+          color: white;
+          font-size: 14px;
+          padding-right: 24px;
+          font-weight: 300; }
+      .singleGame .gameInfo .row .featuredImage {
+        flex: 1 0 0; }
+        .singleGame .gameInfo .row .featuredImage img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover; }
+
+/*# sourceMappingURL=styles.css.map */
